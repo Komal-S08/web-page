@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Yatra</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/train-1421710_1280.jpg');
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        color: white;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .left img {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 50px auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 58px;
+        margin: 2px 2px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 13px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: darkblue;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 106px 80px;
+        padding: 2s0px;
+        border: 2px solid white;
+        border-radius: 27px;
+        width: 33%;
+        font-size: 14px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 80%;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        border-radius: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/train-on-rail-logo-design-600w-1590172789.webp">
+            <div style="line-height: 0px;">
+                Rail Yatra
+            </div>
+        </div>
+        <!-- Mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <a href="C:\Users\Komal\Desktop\cse\Booking\Online.html"><button class="btn">Book
+                    Online</button></a>
+         <button class="btn">Help Center</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            <center>Find Your Train Here</center>
+        </h1>
+        <form action="getmethod.php" method="post">
+            <div class="form-group">
+                <input type="text" id="From" name="From" maxlength="20" size="20" placeholder="From" /><br>
+            </div>
+            <div class="form-group">
+                <input type="text" id="To" name="To" maxlength="20" size="20" placeholder="To" /><br>
+            </div>
+            <div class="form-group">
+                <input type="date" id="dd-mm-yy" name="dd-mm-yy" maxlength="8" placeholder="dd-mm-yy" /><br>
+            </div>
+            <div class="form-group">
+                <center><select id="All Classes" name="All Classes" size="2" multiple>
+                        <option value="All Classes" selected>All Classes</option>
+                        <option value="1A">1A</option>
+                        <option value="2A">2A</option>
+                        <option value="3A">3A</option>
+                        <option value="General Quota">General Quota</option>
+                        <option value="Tatkal">Tatkal</option>
+                        <option value="Ladies">Ladies</option>
+                    </select><br></center>
+            </div>
+            <button class="button">Find Trains </button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
